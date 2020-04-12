@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <LINK REL=StyleSheet HREF="estils.css" TYPE="text/css" MEDIA=screen>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>La meva web amb boostrap</title>
+</head>
+
+<body>
+    <!--FONS DE PANTALLA FIXE-->
+    <div class="fondo"></div>
+    <!--NAVBAR-->
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="#">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Logo</font>
+            </font>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Navegación de palanca">
+              <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;" class="nav-link fa fa-home">HOME</font>
+                        </font><span class=" sr-only "><font style="vertical-align: inherit; "><font style="vertical-align: inherit; ">(actual)</font></font></span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#sobreMi">
+                        <font style="vertical-align: inherit; ">
+                            <font style="vertical-align: inherit; " class="nav-link fa fa-info-circle">SOBRE MI</font>
+                        </font>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#portfolio ">
+                        <font style="vertical-align: inherit; ">
+                            <font style="vertical-align: inherit; " class="nav-link fa fa-folder-open">PORTFOLIO</font>
+                        </font>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;" class="nav-link fa fa-plus">SERVEIS</font>
+                        </font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown06">
+                        <a class="dropdown-item" href="#serveis">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Disseny web </font>
+                            </font>
+                        </a>
+                        <a class="dropdown-item" href="#serveis">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Desplegament </font>
+                            </font>
+                        </a>
+                        <a class="dropdown-item" href="#serveis">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">E-commerce</font>
+                            </font>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0 ">
+                <input class="form-control " type="text " placeholder="Nom ">
+            </form>
+            <form class="form-inline my-2 my-md-0 ">
+                <input class="form-control " type="text " placeholder="Cognom ">
+            </form>
+            <button class="btn my-2 my-sm-0 bg-secondary " type="submit ">LOGIN</button>
+        </div>
+    </nav>
+    <!--Div de presentació de l'empresa-->
+    <div class="container presentacio text-white text-center" style="display:flex; height: 100vh; justify-content: center; align-items: center;">
+        <div class="row">
+            <div class="col-12 titol">
+                <p>Aquesta és la meva web amb bootstrap</p>
+            </div>
+            <div class="col-12">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur numquam quia incidunt, ex earum temporibus voluptate alias? Earum, corporis? Omnis.</p>
+            </div>
+            <button class="btn btn-outline-secondary btn-lg botoMes"><a href="#sobreMi">Vull saber més!</a></button>
+        </div>
+    </div>
+    <!--Div sobre mi-->
+    <div class="container" id="sobreMi">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4"><img src="broncano.jpg" class="img-fluid rounded" alt=""></div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <p> <strong>Nom:</strong> Carlos Javier</p><br>
+                <p> <strong>Cognom:</strong> Hinojosa Garcia</p><br>
+                <p> <strong>Email:</strong> carlos@gmail.com</p><br>
+                <p> <strong>Telefon:</strong> +34 666-123-123</p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-5">
+                <h3><ins>Qui soc?</ins></h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum excepturi exercitationem a nemo, voluptates eveniet! Laudantium quod labore ipsa? In.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Div serveis-->
+    <div class="container-fluid " id="serveis">
+        <div class="row">
+            <div class="col-12 border border-top-0 border-right-0 border-left-0 ">
+                <br>
+                <h1 class="text-center"><ins>Serveis</ins></h1>
+                <p class="text-center "><em>Aquests son els serveis que ofereix la nostra web</em></p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 text-center fa fa-code fa-5x ">
+                <h3> <strong>Disseny web</strong> </h3>
+                <p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis et rem praesentium officia eaque temporibus ipsam animi atque nam itaque?</p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 text-center fa fa-upload fa-5x ">
+                <h3> <strong>Desplegament</strong> </h3>
+                <p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis et rem praesentium officia eaque temporibus ipsam animi atque nam itaque?</p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 text-center fa fa-credit-card fa-5x ">
+                <h3> <strong>E-commerce</strong> </h3>
+                <p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis et rem praesentium officia eaque temporibus ipsam animi atque nam itaque?</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Div portfolio-->
+    <div class="container" id="portfolio">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center m-4"><ins>
+                Els nostres treballs
+            </ins></h1>
+            </div>
+
+            <!--Modals-->
+            <div class="modal fade" id="img1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>Web 1</h1><button class="close" data-dismiss="modal">&times</button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="web1.jpg" class="img-fluid rounded mx-auto d-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="img2">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>Web 2</h1><button class="close" data-dismiss="modal">&times</button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="web2.jpg" class="img-fluid rounded mx-auto d-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="img3">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>Web 3</h1><button class="close" data-dismiss="modal">&times</button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="web3.png" class="img-fluid rounded mx-auto d-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="img4">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>Web 4</h1><button class="close" data-dismiss="modal">&times</button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="web4.png" class="img-fluid rounded mx-auto d-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="img5">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>Web 5</h1><button class="close" data-dismiss="modal">&times</button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="web5.jpg" class="img-fluid rounded mx-auto d-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="img6">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>Web 6</h1><button class="close" data-dismiss="modal">&times</button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="web6.jpg" class="img-fluid rounded mx-auto d-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Cards-->
+            <div class="card col-sm-12 col-md-6 col-lg-4 border border-dark" data-toggle="modal" data-target="#img1">
+                <img class="card-img-top" src="web1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Web1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, modi aut dicta aliquam corrupti cum fugiat eum! Aperiam, eveniet voluptatum?</p>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-4 " data-toggle="modal" data-target="#img2">
+                <img class="card-img-top" src="web2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Web2</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, modi aut dicta aliquam corrupti cum fugiat eum! Aperiam, eveniet voluptatum?</p>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-4 border border-dark" data-toggle="modal" data-target="#img3">
+                <img class="card-img-top" src="web3.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Web3</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, modi aut dicta aliquam corrupti cum fugiat eum! Aperiam, eveniet voluptatum?</p>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-4" data-toggle="modal" data-target="#img4">
+                <img class="card-img-top" src="web4.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Web4</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, modi aut dicta aliquam corrupti cum fugiat eum! Aperiam, eveniet voluptatum?</p>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-4 border border-dark" data-toggle="modal" data-target="#img5">
+                <img class="card-img-top" src="web5.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Web5</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, modi aut dicta aliquam corrupti cum fugiat eum! Aperiam, eveniet voluptatum?</p>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-4" data-toggle="modal" data-target="#img6">
+                <img class="card-img-top" src="web6.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Web6</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, modi aut dicta aliquam corrupti cum fugiat eum! Aperiam, eveniet voluptatum?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!--Div equip-->
+
+    <div class="container-fluid" id="equip">
+        <div class="row">
+            <div class="col-12">
+                <h1>AQUEST ÉS EL NOSTRE EQUIP</h1>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <img src="equip1.jpg" class="img-fluid rounded-circle">
+                <h1>Maria</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, voluptas.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <img src="equip2.jpg" class="img-fluid rounded-circle">
+                <h1>Laia</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, voluptas.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <img src="equip3.jpg" class="img-fluid rounded-circle">
+                <h1>Lola</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, voluptas.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <img src="equip4.jpg" class="img-fluid rounded-circle">
+                <h1>Sofia</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, voluptas.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Div contacte-->
+
+    <div class="container" id="contacte">
+        <div class="row">
+            <div class="col-12">
+
+                <div class="card card-outline-secondary">
+                    <div class="card-header">
+                        <h3 class="mb-0">Formulari de contacte</h3>
+                    </div>
+                    <div class="card-body">
+                        <form class="form" role="form" autocomplete="off">
+                            <fieldset>
+                                <label for="name2" class="mb-0">Nom</label>
+                                <div class="row mb-1">
+                                    <div class="col-lg-12">
+                                        <input type="text" class="form-control" required="" placeholder="Carlos">
+                                    </div>
+                                </div>
+                                <label for="email2" class="mb-0">Email</label>
+                                <div class="row mb-1">
+                                    <div class="col-lg-12">
+                                        <input type="text" class="form-control" required="" placeholder="exemple@email.com">
+                                    </div>
+                                </div>
+                                <label for="message2" class="mb-0">Missatge</label>
+                                <div class="row mb-1">
+                                    <div class="col-lg-12">
+                                        <textarea rows="6" class="form-control" required="" placeholder="Necessito informació"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-secondary btn-lg float-right">Enviar</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <div class="container-fluid" id="footer">
+        <div class="row">
+            <div class="col-4">
+                <h2><ins>Enllaços</ins></h2>
+                <a href="#sobreMi">Sobre mi</a><br>
+                <a href="#equip">El nostre equip</a><br>
+                <a href="#portfolio">Portfolio</a><br>
+                <a href="#contacte">Contacte</a><br>
+            </div>
+            <div class="col-4">
+                <h2><ins>Informació de contacte</ins></h2>
+                <p>C/Santa Llogaia, 30</p>
+                <p>17000, Figueres, Girona</p>
+                <p>CATALUNYA</p>
+                <p><i class="fa fa-phone"></i> +34 972 23 12 45</p>
+                <p><i class="fa fa-envelope"></i> carlos@email.com</p>
+            </div>
+            <div class="col-4">
+                <h2><ins>Social Media</ins></h2>
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                <a href="https://www.google.com" class="fa fa-google"></a>
+                <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+                <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+            </div>
+            <div class="col-12">
+                <p>Web creada per Carlos Javier Hinojosa Garcia</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+</body>
+
+</html>
