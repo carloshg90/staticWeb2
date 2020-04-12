@@ -1,0 +1,3 @@
+# staticWeb
+
+Activitat de desplegament
